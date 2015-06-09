@@ -3,11 +3,50 @@
 	goldenrod
 */
 
+.family {
+	text-align: center;
+	margin-top: 100px;
+}
+
+
+.statement {
+	text-align: center;
+	margin-top: 25px;
+
+}
+
+.navigation {
+	margin-top: 100px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.grid-container {
+	text-align: center;
+
+}
+
+.collage {
+	text-align: center;
+}
+
+.audio {
+	text-align: center;
+}
+
+.grid-container {
+
+}
+
+
+
+
 
 
 h1	{
-	background-position: 2239px 1650px;
+	background-image: url(../img/stardust.png);
 	color: goldenrod;
+	text-align: center;
 	line-height: 200px;
 	font-size: 5em;
 	border-radius: 10px;
@@ -16,14 +55,22 @@ h1	{
 	
 
 h2	{
-	color: midnightblue;
-	background: goldenrod;
-	border-radius: 10px;
+	color: goldenrod;
+	font-size: 3.25em;
+	text-align: center;
+}
+
+h3	{
+	color: grey;
+	font-size: 2.25em;
+	text-align: center;
+	margin-top: -40px;
 }
 
 body {
+	font-family: marvel;
+	background: url(../img/brickwall.png);
 	color: midnightblue;
-	background: lightgrey;
 }
 
 li {
@@ -45,88 +92,138 @@ a {
 	color: midnightblue;
 }
 
+p {
+	font-family: marvel;
+	font-size: 1.5em;
+}
+
 
 
 a[href^="index"]::before {
-	content: "◎";
+	content: "☝";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 a[href^="index"]:hover::before {
-	background: goldenrod;
 	border-radius: 10px;
-	content: "◉";
+	color: goldenrod;
+	content: "✌";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 	padding: 3px;
 }
 
 a[href^="portfolio"]::before {
-	content: "◎";
+	content: "☝";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 a[href^="portfolio"]:hover::before {
-	background: goldenrod;
 	border-radius: 10px;
-	content: "◉";
+	color: goldenrod;
+	content: "✌";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 	padding: 3px;
 }
 
 a[href^="resume"]::before {
-	content: "◎";
+	content: "☝";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 a[href^="resume"]:hover::before {
-	background: goldenrod;
 	border-radius: 10px;
-	content: "◉";
+	color: goldenrod;
+	content: "✌";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 	padding: 3px;
 }
 
 a[href^="collage"]::before {
-	content: "◎";
+	content: "☝";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 a[href^="collage"]:hover::before {
-	background: goldenrod;
 	border-radius: 10px;
-	content: "◉";
+	color: goldenrod;
+	content: "✌";
 	letter-spacing: 4px;
-	font-size: 2em;
+	font-size: 1em;
 	padding: 3px;
 }
 
+a[href^="mailto"]:before {
+  content: "☝";
+  padding-right: .25em;
+}
+
+a[href^="mailto"]:hover::before {
+	border-radius: 10px;
+	color: goldenrod;
+	content: "✌";
+	letter-spacing: 4px;
+	font-size: 1em;
+	padding: 3px;
+}
+
+a[href^="http"]:before {
+  content: "☝";
+  padding-right: .25em;
+}
+
+a[href^="http"]:hover::before {
+	border-radius: 10px;
+	color: goldenrod;
+	content: "✌";
+	letter-spacing: 4px;
+	font-size: 1em;
+	padding: 3px;
+}
+
+a[href*="etsy"]:before {
+  content: "☝";
+  padding-right: .25em;
+}
+
+a[href*="etsy"]:hover::before {
+	border-radius: 10px;
+	color: goldenrod;
+	content: "✌";
+	letter-spacing: 4px;
+	font-size: 1em;
+	padding: 3px;
+}
+
+
+
 .current {
-	background: floralwhite;
+	background: lightgrey;
 	border-radius: 10px;
 	content: "◉";
 	
 }
 
-img
-{
-	height: 800px;
-	margin-left: 40px;
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-}
 
 
-img:hover
-{
-    filter: none;
-    -webkit-filter: none;
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 1px) and (max-width: 767px)  {
+	.grid-container > [class^="grid-"] {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.hide-mobile {
+		display: none;
+	}
 }
+
+@media (min-width: 768px) {
 
