@@ -4,13 +4,18 @@
 */
 
 .content {
-	padding-left: 200px;
+	padding-left: 250px;
+	padding-right: 80px;
+}
+
+.content2 {
+	padding-left: 300px;
 	padding-right: 200px;
 }
 
 .resume-content {
-	padding-left: 300px;
-	padding-right: 200px;
+	padding-left: 350px;
+	padding-right: 350px;
 }
 
 .family {
