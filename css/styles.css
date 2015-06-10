@@ -4,9 +4,15 @@
 */
 
 .content {
-	padding-left: 250px;
-	padding-right: 80px;
+	display: inline-block;
+	padding-left: 325px;
+	padding-right: 150px;
 }
+
+figure {
+	display: inline-block;
+}
+
 
 .content2 {
 	padding-left: 300px;
@@ -99,6 +105,7 @@
 
 .portfolio {
 	text-align: center;
+	
 }
 
 
@@ -181,7 +188,7 @@ p {
 	font-size: 1.25em;
 }
 
-
+/* Navigation & Links */
 
 a[href^="index"]::before {
 	content: "☝";
@@ -284,7 +291,6 @@ a[href*="etsy"]:hover::before {
 	font-size: 1em;
 	padding: 3px;
 }
-
 
 
 .current {
