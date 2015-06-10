@@ -17,11 +17,13 @@ figure {
 .content2 {
 	padding-left: 300px;
 	padding-right: 200px;
+	margin:0px;
 }
 
 .resume-content {
 	padding-left: 350px;
 	padding-right: 350px;
+	margin:0px;
 }
 
 .family {
