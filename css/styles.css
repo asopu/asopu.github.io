@@ -3,9 +3,20 @@
 	goldenrod
 */
 
+.content {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.resume-content {
+	padding-left: 300px;
+	padding-right: 200px;
+}
+
 .family {
 	text-align: center;
 	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
 
@@ -22,9 +33,44 @@
 }
 
 .grid-container {
-	text-align: center;
-
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+.grid-container:after,
+	.group:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}	
+
+.grid-container > [class^="grid-7"] {
+		float: left;
+		min-height: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 2%;
+	}
+
+.grid-container > [class^="grid-5"]:first-child {
+		margin-left: 0;
+	}
+
+.grid-container > [class^="grid-5"]:last-child {
+		float: right;
+	}
+
+.grid-5 {
+		width: 50%;
+	}
+
+.grid-7 {
+		width: 40%;
+	}
+
+
 
 .collage {
 	text-align: center;
@@ -34,8 +80,20 @@
 	text-align: center;
 }
 
-.grid-container {
+.grid-6 {
+	text-align: center;
+}
 
+.grid-9 {
+	text-align: center;
+}
+
+.resume {
+
+}
+
+.portfolio {
+	text-align: center;
 }
 
 
@@ -67,6 +125,27 @@ h3	{
 	margin-top: -40px;
 }
 
+h4 {
+	color: goldenrod;
+	font-size: 2.25em;
+	text-align: left;
+	margin-top: -40px;
+}
+
+h5	{
+	color: goldenrod;
+	font-size: 2.25em;
+	float: left;
+	margin-top: -40px;
+}
+
+h6	{
+	color: grey;
+	font-size: 1.75em;
+	float: left;
+	margin-top: -40px;
+}
+
 body {
 	font-family: marvel;
 	background: url(../img/brickwall.png);
@@ -94,7 +173,7 @@ a {
 
 p {
 	font-family: marvel;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 
